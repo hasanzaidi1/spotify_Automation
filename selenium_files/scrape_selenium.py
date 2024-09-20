@@ -19,7 +19,7 @@ event_items = driver.find_elements(By.CLASS_NAME, "btE2c3IKaOXZ4VNAb8WQ")
 
 
 # Open the text file in write mode
-with open("../text_files/content.txt", "w") as f:
+with open("../text_files/list_songs.txt", "w") as f:
     for item in event_items:
         f.write(item.text+'\n')
         print(item)
